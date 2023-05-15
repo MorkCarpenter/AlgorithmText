@@ -1,5 +1,16 @@
 ﻿#include<iostream>
 using namespace std;
+int a, b, c;
+//int main(){
+//	cin>>a>>b>>c;
+//	int ans = a%c==0?a:a-(a%c)+c;
+//	if(ans<=b){
+//		cout<<ans;
+//	}else{
+//		cout<<-1;
+//	}
+//	return 0;
+//}
 
 //B
 //int dp[40][20];
@@ -69,8 +80,6 @@ using namespace std;
 //	}
 //	cout << ans;
 //}
-
-
 
 //#include<iostream>
 //using namespace std;
