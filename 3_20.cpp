@@ -1,6 +1,5 @@
-﻿#include<iostream>
-using namespace std;
-int a, b, c;
+﻿#define  _CRT_SECURE_NO_WARNINGS 1
+
 //int main(){
 //	cin>>a>>b>>c;
 //	int ans = a%c==0?a:a-(a%c)+c;
