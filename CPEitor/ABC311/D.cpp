@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 using namespace std;
 char map[205][205];
 bool ok[205][205];
@@ -9,7 +9,6 @@ void solve(int x, int y) {
 	ok[x][y] = true;
 	for (int i = 1; i <= 200; ++i) {
 		if (map[x + i][y] == '#') {
-			if (!ok[x][y] || !ok[x + i - 1][y])
 				ans += i - 2;
 			if (!ok[x + i - 1][y]) {
 				solve(x + i - 1, y);
@@ -19,7 +18,6 @@ void solve(int x, int y) {
 	}
 	for (int i = 1; i <= 200; ++i) {
 		if (map[x][y + i] == '#') {
-			if (!ok[x][y] || !ok[x][y + i - 1])
 				ans += i - 2;
 			if (!ok[x][y + i - 1]) {
 				solve(x, y + i - 1);
@@ -29,7 +27,6 @@ void solve(int x, int y) {
 	}
 	for (int i = 1; i <= 200; ++i) {
 		if (map[x - i][y] == '#') {
-			if (!ok[x][y] || !ok[x - i + 1][y])
 				ans += i - 2;
 			if (!ok[x - i + 1][y]) {
 				solve(x - i + 1, y);
@@ -39,7 +36,6 @@ void solve(int x, int y) {
 	}
 	for (int i = 1; i <= 200; ++i) {
 		if (map[x][y - i] == '#') {
-			if (!ok[x][y] || !ok[x][y - i + 1])
 				ans += i - 2;
 			if (!ok[x][y - i + 1]) {
 				solve(x, y - i + 1);
