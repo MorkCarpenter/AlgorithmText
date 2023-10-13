@@ -4,3 +4,4 @@
 *.layout
 /x64/Debug
 /.vs/LGtxt
+/problemset/.cph/*

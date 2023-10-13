@@ -1,19 +1,30 @@
 #include <algorithm>
+#include <bitset>
 #include <cmath>
-#include <cstring>
-#include <deque>
 #include <iostream>
+#include <map>
+#include <queue>
 #include <set>
+#include <stack>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
 #include <vector>
-int in[105];
 using namespace std;
-deque<int> que;
-int main() {
+map<int, int> m;
+int n, in;
+int main()
+{
   ios::sync_with_stdio(false);
-  cin.tie(0), cout.tie(0);
-  int n;
   cin >> n;
-  for (int i = 0; i < n; ++i) {
-    cin >> n;
+  for (int i = 0; i < n; i++)
+  {
+    cin >> in;
+    m[in]++;
   }
+  for (auto it : m)
+  {
+    cout << it.first << " " << it.second << "\n";
+  }
+  return 0;
 }

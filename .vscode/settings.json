@@ -1,5 +1,17 @@
 {
     "files.associations": {
-        "iostream": "cpp"
-    }
+        "*.json": "jsonc",
+        "iostream": "cpp",
+        "xiosbase": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "set": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
